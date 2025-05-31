@@ -36,18 +36,12 @@ chmod +x pipeline.sh Run the script:
 ./pipeline.sh If everything is correct, the data will be extracted, processed, and loaded into MySQL.
 
 ## Output: 
-You’ll get a crypto_currency.csv file with the Name and Value of each currency.
+1. You’ll get a crypto_currency.csv file with the Name and Value of each currency.
 
-The MySQL database will have a crypto table with the data.
+2. The MySQL database will have a crypto table with the data.
 
  ## What I Learned
-How to work with APIs using curl
-
-How to process and clean data using Linux commands
-
-How to load data into MySQL from a CSV
-
-The importance of using environment variables for security
+This project shows how to work with APIs using curl, process and clean data with Linux commands, load CSV data into MySQL, and securely manage sensitive information using environment variables.
 
 ## Things I Plan to Improve
 Store the API key inside the .env file
