@@ -32,11 +32,8 @@ Bash & .env file for environment variables
 .env File
 I used a .env file to store my credentials and file paths. Here's what it looks like:
 
-env
-Copy
-Edit
 MYSQL_USER=root
 MYSQL_PASSWORD=your_mysql_password
 DATABASE=crypto_data
 CSV_PATH=/full/path/to/crypto_currency.csv
-Make sure to update the path to where your CSV will be created.
+
