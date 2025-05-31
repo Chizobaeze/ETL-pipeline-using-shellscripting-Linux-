@@ -5,16 +5,11 @@ This is a simple ETL (Extract, Transform, Load) project I built using Bash scrip
 The script pulls crypto data from the CoinStats API, processes it, and loads it into a MySQL database. I built this as part of my learning journey into data engineering and working with Linux tools.
 
 # 🛠️ What the Script Does
-1. Extract: Gets cryptocurrency names and their values using the CoinStats API.
-Saves the names in a file called name_currency.txt.
-Saves the values in a separate file called values_currency.txt.
+Extract: Fetch cryptocurrency names and their values from the CoinStats API, saving the names to name_currency.txt and the values to values_currency.txt.
 
-2. Transform: Adds headers to both files (Name and Value).
-Merges the two into one CSV file: crypto_currency.csv.
+Transform: Add headers ("Name" and "Value") to both files, then merge them into a single CSV file called crypto_currency.csv.
 
-3. Load: Connects to MySQL.
-Creates a database and a table if they don’t exist.
-Loads the CSV data into the crypto table using LOAD DATA LOCAL INFILE.
+Load: Connect to MySQL, create the database and table if they don’t exist, and load the CSV data into the crypto table using LOAD DATA LOCAL INFILE.
 
 # 🧰 Tools I Used
 Curl (for making API requests).
