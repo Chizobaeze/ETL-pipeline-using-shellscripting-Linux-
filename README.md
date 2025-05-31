@@ -20,20 +20,20 @@ Creates a database and a table if they don’t exist.
 Loads the CSV data into the crypto table using LOAD DATA LOCAL INFILE.
 
 # 🧰 Tools I Used
-curl (for making API requests)
+Curl (for making API requests).
 
-grep, sed, paste (for text processing)
+Grep, sed, paste (for text processing).
 
-MySQL
+MySQL.
 
-Bash & .env file for environment variables
+Bash & .env file for environment variables.
 
-⚙️ Setting Up
+## ⚙️ Setting Up
 .env File
 I used a .env file to store my credentials and file paths. Here's what it looks like:
 
-MYSQL_USER=root
-MYSQL_PASSWORD=your_mysql_password
-DATABASE=crypto_data
-CSV_PATH=/full/path/to/crypto_currency.csv
+MYSQL_USER=root.
+MYSQL_PASSWORD=your_mysql_password.
+DATABASE=crypto_data.
+CSV_PATH=/full/path/to/crypto_currency.csv.
 
