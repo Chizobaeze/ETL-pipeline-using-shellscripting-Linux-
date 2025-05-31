@@ -1,30 +1,25 @@
-# ETL-pipeline-using-shellscripting(Linux)
-Crypto Currency ETL Pipeline Using Bash
+
+# Crypto Currency ETL Pipeline Using Bash
 This is a simple ETL (Extract, Transform, Load) project I built using Bash scripting on a Linux environment. The goal was to practice automating data tasks without using Python or any fancy tools — just shell commands and logic.
 
 The script pulls crypto data from the CoinStats API, processes it, and loads it into a MySQL database. I built this as part of my learning journey into data engineering and working with Linux tools.
 
-🛠️ What the Script Does
+# 🛠️ What the Script Does
 1. Extract
 Gets cryptocurrency names and their values using the CoinStats API.
-
 Saves the names in a file called name_currency.txt.
-
 Saves the values in a separate file called values_currency.txt.
 
 2. Transform
 Adds headers to both files (Name and Value).
-
 Merges the two into one CSV file: crypto_currency.csv.
 
 3. Load
 Connects to MySQL.
-
 Creates a database and a table if they don’t exist.
-
 Loads the CSV data into the crypto table using LOAD DATA LOCAL INFILE.
 
-🧰 Tools I Used
+# 🧰 Tools I Used
 curl (for making API requests)
 
 grep, sed, paste (for text processing)
