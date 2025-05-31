@@ -32,3 +32,39 @@ DATABASE=crypto_data.
 
 CSV_PATH=/full/path/to/crypto_currency.csv.
 
+
+## To run the script
+
+chmod +x pipeline.sh
+Run the script:
+
+./pipeline.sh
+If everything is correct, the data will be extracted, processed, and loaded into MySQL.
+
+✅ Output
+You’ll get a crypto_currency.csv file with the Name and Value of each currency.
+
+The MySQL database will have a crypto table with the data.
+
+## 🧠 What I Learned
+How to work with APIs using curl
+
+How to process and clean data using Linux commands
+
+How to load data into MySQL from a CSV
+
+The importance of using environment variables for security
+
+## 🌱 Things I Plan to Improve
+Store the API key inside the .env file
+
+Add proper error messages and logging
+
+Schedule the script using cron
+
+Add more columns from the API (like symbol, market cap, etc.)
+
+Improve validation before loading the data
+
+
+
